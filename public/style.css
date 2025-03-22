@@ -1,0 +1,133 @@
+
+body, h1, h2, h3, p, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-c{
+    width: 60vw;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+form button {
+    padding: 8px;
+    background: #2602a5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: center;
+}
+
+form button:hover {
+    background: #12026c;
+}
+
+
+form .button-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.blog-post {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.blog-post h2 {
+    margin-bottom: 10px;
+}
+
+
+.blog-post p {
+    margin-bottom: 20px;
+}
+
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+button {
+    padding: 8px;
+    background: #1c03ac;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: center;
+}
+
+button:hover {
+    background: #02067d;
+}
+
+
+footer {
+    margin-top: auto; 
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Footer text styling */
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

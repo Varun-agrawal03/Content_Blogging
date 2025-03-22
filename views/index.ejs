@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog List</title>
+  <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+  <h1 style="text-align: center;">Content Corner</h1>
+  
+  <main>
+    
+    <div class="form-c">
+      <form action="/blogs" method="POST">
+        <label for="title" style="font-size: 1.3rem;">Title:</label>
+        <input type="text" id="title" name="title" required>
+        <br>
+        <label for="content" style="font-size: 1.3rem;">Content:</label>
+        <textarea id="content" name="content" rows="10" required></textarea>
+        <br>
+        <button type="submit">Add Blog</button>
+      </form>
+    </div>
+    
+   
+    <% blogs.forEach(blog => { %>
+      <div class="blog-post">
+        <h2><%= blog.title %></h2>
+        <p><%= blog.content %></p>
+        <a href="/edit/<%= blog.id %>">Edit</a>
+        <form action="/delete" method="POST" style="display:inline;">
+          <input type="hidden" name="id" value="<%= blog.id %>">
+          <button type="submit">Delete</button>
+        </form>
+      </div>
+    <% }) %>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Piyush Lokhande. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
